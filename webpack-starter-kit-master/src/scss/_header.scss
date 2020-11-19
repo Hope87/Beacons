@@ -1,0 +1,88 @@
+.header {
+  width: 100%;
+  display: block;
+  background-image: url(../images/head-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: 60px;
+    position: relative;
+
+    &__item {
+      padding-left: 7rem;
+    }
+
+    &__item a {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      color: $color-white;
+      text-decoration: none;
+      position: relative;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    position: absolute;
+    left: -8%;
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    & h1 {
+      font-size: $title-size;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+
+    & h4 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: $color-white;
+      line-height: 1.5;
+    }
+
+    & p {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: $color-white;
+      line-height: 30px;
+    }
+  }
+
+  //===========STYLE============================================
+  &__menu {
+    &__item a:hover {
+      padding: 15px 30px;
+      background-color: $color-white;
+      transition: all 0.3s ease;
+      border-radius: 30px;
+      position: relative;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+      color: $color-bg;
+    }
+  }
+  &__menu {
+    &__item .active {
+      background: $color-white;
+      padding: 15px 30px;
+      font-weight: 700;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      border-radius: 30px;
+      color: $color-bg;
+    }
+  }
+}

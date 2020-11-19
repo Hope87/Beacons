@@ -1,0 +1,29 @@
+$color-white: #fff;
+$color-black: #282828;
+$color-bg: #43cb83;
+
+$font-primary: Lato, sans-serif;
+
+$title-size: 3.6rem;
+
+//==================================================================
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  text-align: left;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,114 @@
+.cards {
+  & h2 {
+    font-size: $title-size;
+    font-weight: 700;
+    color: $color-black;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  &__item {
+    border: 1px solid #e3e3e3;
+    height: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+  }
+
+  & h3 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 50px;
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 60%;
+    height: 140px;
+
+    & img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  &__price {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.8rem;
+    font-family: Montserrat, sans-serif;
+    color: #515461;
+  }
+
+  &__text {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    & .wrapper-counter {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      width: 140px;
+
+      & .counter {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 30px;
+        opacity: 0.8;
+        border: 1px solid #e6e6e6;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 25px;
+
+        & button {
+          border: none;
+          margin: 0 2px;
+          font-weight: 700;
+          font-size: 15px;
+          background-color: $color-white;
+        }
+      }
+
+      &__sp {
+        position: absolute;
+        top: 6px;
+        right: -8px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__btn {
+    border: 2px solid $color-bg;
+    background: transparent;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 700;
+    color: #6b6b6b;
+    text-transform: uppercase;
+    outline: none;
+  }
+
+  //===============STYLE=========================================
+  &__item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  &__item:hover .cards__btn {
+    background-color: $color-bg;
+    color: $color-black;
+  }
+}

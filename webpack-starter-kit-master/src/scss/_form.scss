@@ -1,0 +1,98 @@
+.form {
+  display: block;
+  width: 100%;
+  background-image: url(../images/bg-beacons.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 40px;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    & img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: $color-black;
+    font-size: $title-size;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  &__step {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 0 80px;
+  }
+
+  &__site {
+    display: block;
+    position: relative;
+    width: 57.3%;
+    margin: 0 auto;
+
+    & input {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $color-black;
+      padding-left: 40px;
+      width: 100%;
+      display: block;
+      height: 50px;
+      border-radius: 30px;
+      border: 2px solid $color-white;
+      margin: 25px 0;
+      background: url(../images/form-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      outline: none;
+    }
+
+    & button {
+      display: block;
+      width: 200px;
+      height: 55px;
+      background-color: $color-white;
+      color: $color-bg;
+      border-radius: 30px;
+      font-size: 2.7rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      margin: 30px auto;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+//================STYLE===============================
+.active-step {
+  width: 140px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: $color-white;
+  box-shadow: 0 15px 30px #709f90;
+}
