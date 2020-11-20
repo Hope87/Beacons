@@ -7,14 +7,18 @@
   background-size: cover;
 
   &__title {
+    position: relative;
     font-size: 2.4rem;
     color: $color-white;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 0;
+    z-index: 1;
   }
 
   &__support {
+    position: relative;
+    z-index: 2;
     font-size: 2.4rem;
     color: $color-white;
     text-align: center;
@@ -75,6 +79,10 @@
     bottom: 0;
     left: 0;
     z-index: 0;
+
+    @media only screen and (max-width: 768px) {
+      visibility: hidden;
+    }
 
     & img {
       width: 90%;

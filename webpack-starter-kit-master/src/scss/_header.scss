@@ -16,6 +16,11 @@
     text-align: center;
     cursor: pointer;
     z-index: 600;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+      margin-top: 20px;
+    }
   }
 
   &__icon {
@@ -63,8 +68,24 @@
     margin-top: 60px;
     position: relative;
 
+    @media only screen and (max-width: 768px) {
+      position: relative;
+      margin: 20px 0;
+      padding: 0;
+      width: 100%;
+      display: block;
+      display: none;
+    }
+
     &__item {
-      padding-left: 7rem;
+      margin-left: 70px;
+      display: inline-block;
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+        margin: 40px 0;
+        text-align: center;
+      }
     }
 
     &__item a {
@@ -79,10 +100,14 @@
   &__img {
     width: 100%;
     position: absolute;
-    left: -15%;
+    left: -3%;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
 
     & img {
-      width: 108%;
+      width: 100%;
       object-fit: cover;
     }
   }
@@ -91,11 +116,20 @@
     margin-top: 80px;
     margin-bottom: 100px;
 
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
     & h1 {
       font-size: $title-size;
       font-weight: 900;
       text-transform: uppercase;
       color: $color-white;
+
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 2.8rem;
+      }
     }
 
     & h4 {
@@ -103,6 +137,10 @@
       font-weight: 900;
       color: $color-white;
       line-height: 1.5;
+
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 2rem;
+      }
     }
 
     & p {
@@ -110,6 +148,10 @@
       font-weight: 400;
       color: $color-white;
       line-height: 30px;
+
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        line-height: 24px;
+      }
     }
   }
 
@@ -155,6 +197,6 @@
   }
 
   .show {
-    display: block;
+    display: block !important ;
   }
 }

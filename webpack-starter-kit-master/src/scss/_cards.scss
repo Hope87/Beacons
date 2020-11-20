@@ -17,7 +17,7 @@
   }
 
   & h3 {
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
@@ -30,6 +30,10 @@
     margin: 0 auto;
     width: 60%;
     height: 165px;
+
+    @media only screen and (max-width: 768px) {
+      width: 30%;
+    }
 
     & img {
       width: 100%;
@@ -50,7 +54,14 @@
   &__paragraph {
     margin-top: 15px;
     text-align: center;
-    height: 150px;
+    height: 180px;
+    font-size: 1.4rem;
+
+    @media only screen and (max-width: 768px) {
+      height: 120px;
+      padding: 0 20px 0 20px;
+      font-size: 1.8rem;
+    }
   }
 
   &__text {
@@ -82,7 +93,7 @@
           border: none;
           margin: 0 2px;
           font-weight: 700;
-          font-size: 15px;
+          font-size: 1.5rem;
           background-color: $color-white;
         }
       }
@@ -90,8 +101,8 @@
       &__sp {
         position: absolute;
         top: 6px;
-        right: 30px;
-        font-size: 12px;
+        right: 18px;
+        font-size: 1.2rem;
       }
     }
   }
@@ -100,7 +111,7 @@
     border: 2px solid $color-bg;
     background: transparent;
     border-radius: 30px;
-    width: 200px;
+    width: 180px;
     height: 40px;
     display: block;
     margin: 20px auto;
