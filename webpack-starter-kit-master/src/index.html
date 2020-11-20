@@ -15,6 +15,10 @@
     <header class="header">
       <div class="container">
         <div class="row">
+          <input type="checkbox" class="header__checkbox" id="header__toogle">
+          <label for="header__toogle" class="header__btn">
+            <span class="header__icon"></span>
+          </label>
           <div class="col-md-12">
             <ul class="header__menu">
               <li class="header__menu__item">
@@ -70,12 +74,8 @@
               <div class="cards__text cards__text-js">
                 <div>
                   <p class="cards__price">$15</p>
-                  <p>
-                    ASensor is a BLE beacon with multiple advertising data
-                    formats. The BLE is a very low power 2.4G radio that can
-                    transmit the beacon information efficiently. The typical
-                    beacon battery life is 1.5 year in default settings 3-Axis,
-                    12-bit accelerometer magn.
+                  <p class="cards__paragraph">
+                    ASensor is a BLE beacon with multiple advertising data formats. The BLE is a very low power 2.4G radio that can transmit the beacon information efficiently. The typical beacon battery life is 1.5 year in default settings 3-Axis, 12-bit accelerometer magna aliqua.
                   </p>
                 </div>
 
@@ -86,10 +86,10 @@
                     <button class="increment" data-id="1">+</button>
                   </div>
                   <span class="wrapper-counter__sp">шт</span>
+                  <button class="cards__btn">by now</button>
                 </div>
               </div>
 
-              <button class="cards__btn">by now</button>
             </div>
           </div>
 
@@ -103,11 +103,8 @@
               <div class="cards__text cards__text-js">
                 <div>
                   <p class="cards__price">$13</p>
-                  <p>
-                    ARM Cortex - M0 32-bit processor Dialog solution, long
-                    battery life Support Bluetooth Smart 4.0 Builtin 1 x CR2450
-                    battery holder Temperature sensor for environment monitoring
-                    Configurable App AprilBeacon lo
+                  <p class="cards__paragraph">
+                    ARM Cortex - M0 32-bit processor Dialog solution, long battery life Support Bluetooth Smart 4.0 Builtin 1 x CR2450 battery holder Temperature sensor for environment monitoring Configurable by App AprilBeacon
                   </p>
                 </div>
 
@@ -119,10 +116,10 @@
                     <button class="increment" data-id="2">+</button>
                   </div>
                   <span class="wrapper-counter__sp">шт</span>
+                  <button class="cards__btn">by now</button>
                 </div>
               </div>
 
-              <button class="cards__btn">by now</button>
             </div>
           </div>
 
@@ -136,10 +133,8 @@
               <div class="cards__text cards__text-js">
                 <div>
                   <p class="cards__price">$25</p>
-                  <p>
-                    Estimote Proximity Beacons lifetime: 2 years range: up to 70
-                    m packets: iBeacon™ or Eddystone™ features: motion &
-                    temperature sensor, NFC
+                  <p class="cards__paragraph">
+                    Estimote Proximity Beacons lifetime: 2 years range: up to 70 m packets: iBeacon™ or Eddystone™ features: motion & temperature sensor, NFC
                   </p>
                 </div>
 
@@ -151,10 +146,10 @@
                     <button class="increment" data-id="3">+</button>
                   </div>
                   <span class="wrapper-counter__sp">шт</span>
+                  <button class="cards__btn">by now</button>
                 </div>
               </div>
 
-              <button class="cards__btn">by now</button>
             </div>
           </div>
 
@@ -168,11 +163,8 @@
               <div class="cards__text cards__text-js">
                 <div>
                   <p class="cards__price">$30</p>
-                  <p>
-                    Aprilbeacon 227L (150M Range) iBeacon size: 66mm*36mm*22mm
-                    Default frequency: 900ms Setting frequency: 100ms or more
-                    System: IOS 7.0, Android 4.3 Color: green iBeacon + white
-                    case
+                  <p class="cards__paragraph">
+                    Aprilbeacon 227L (150M Range) iBeacon size: 66mm*36mm*22mm Default frequency: 900ms Setting frequency: 100ms or more System: IOS 7.0, Android 4.3 Color: green iBeacon + white case
                   </p>
                 </div>
 
@@ -183,10 +175,11 @@
                     <button class="increment" data-id="4">+</button>
                   </div>
                   <span class="wrapper-counter__sp">шт</span>
+              <button class="cards__btn">by now</button>
+
                 </div>
               </div>
 
-              <button class="cards__btn">by now</button>
             </div>
           </div>
         </div>
@@ -202,7 +195,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 step-1">
             <h2 class="form__title">A couple of steps to make your store popular</h2>
           </div>
 
@@ -216,20 +209,52 @@
           <div class="col-md-2">
             <p class="form__step">STEP 3</p>
           </div>
-          <div class="col-md-3 hidden"></div>
+          <div class="col-md-3"></div>
+           <div id="step-1" class="">
+            <div class="col-md-12">
+              <p class="form__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+            </div>
+  
+            <div class="col-md-12">
+              <form class="form__site" action="#" name="form-js">
+                <input type="text" name="First name" id="" placeholder="Enter First Name">
+                <input type="text" name="Last name" id="" placeholder="Enter Last Name">
+                <input type="email" name="Email" id="" placeholder="Enter Email">
+                <button>Next</button>
+              </form>
+            </div>
+           </div>
 
-          <div class="col-md-12">
-            <p class="form__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-          </div>
+           <div id="step-2" class="step-hidden">
+            <div class="col-md-12">
+              <p class="form__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit vel vitae in repudiandae est assumenda saepe itaque, delectus laborum veritatis, eum velit minus nobis natus quae quas nulla et.</p>
+            </div>
+  
+            <div class="col-md-12">
+              <form class="form__site" action="#" name="form-js">
+                <input type="text" name="Age" id="" placeholder="Enter Your age">
+                <input type="text" name="Weight" id="" placeholder="Enter Your weight">
+                <input type="email" name="Growth" id="" placeholder="Enter Your growth">
+                <button>Next</button>
+              </form>
+            </div>
+           </div>
 
-          <div class="col-md-12">
-            <form class="form__site" action="#" name="form-js">
-              <input type="text" name="First name" id="" placeholder="Enter First Name">
-              <input type="text" name="Last name" id="" placeholder="Enter Last Name">
-              <input type="email" name="Email" id="" placeholder="Enter Email">
-              <button>Next</button>
-            </form>
-          </div>
+           <div id="step-3" class="step-hidden">
+            <div class="col-md-12">
+              <p class="form__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint deleniti, debitis voluptate possimus qui officia enim omnis culpa fugiat labore dolor, sed molestias sunt? Accusamus repudiandae itaque natus unde temporibus.
+              </p>
+            </div>
+  
+            <div class="col-md-12">
+              <form class="form__site" action="#" name="form-js">
+                <input type="text" name="First password" id="" placeholder="Enter First password">
+                <input type="text" name="Second password" id="" placeholder="Enter Second password">
+                <button>Next</button>
+              </form>
+            </div>
+           </div>
+          
         </div>
       </div>
     </section>

@@ -6,6 +6,56 @@
   background-size: cover;
   position: relative;
 
+  &__checkbox {
+    display: none;
+  }
+
+  &__btn {
+    display: none;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 600;
+  }
+
+  &__icon {
+    position: relative;
+    margin-left: 1rem;
+    margin-top: 2rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      display: inline-block;
+      border-radius: 75px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: all 0.4s;
+    }
+
+    &::before {
+      top: -0.6rem;
+      border-radius: 75px;
+    }
+    &::after {
+      top: 0.6rem;
+      border-radius: 75px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      margin-left: 1rem;
+      margin-top: 0.6rem;
+    }
+  }
+
   &__menu {
     display: flex;
     justify-content: flex-end;
@@ -84,5 +134,27 @@
       border-radius: 30px;
       color: $color-bg;
     }
+  }
+
+  //======FUNCTION================================
+
+  &__checkbox:checked + .header__btn span {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + .header__btn span::before {
+    top: 0;
+    transform: rotate(135deg);
+    background-color: $color-white;
+  }
+
+  &__checkbox:checked + .header__btn span::after {
+    top: 0;
+    transform: rotate(-135deg);
+    background-color: $color-white;
+  }
+
+  .show {
+    display: block;
   }
 }

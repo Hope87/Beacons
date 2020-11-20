@@ -12,6 +12,7 @@
     height: calc(100% - 20px);
     display: flex;
     flex-direction: column;
+    position: relative;
     transition: all 0.3s ease;
   }
 
@@ -21,12 +22,14 @@
     text-transform: uppercase;
     font-weight: 500;
     height: 50px;
+    padding: 0 20px;
+    margin: 15px 0 15px 0;
   }
 
   &__img {
     margin: 0 auto;
     width: 60%;
-    height: 140px;
+    height: 165px;
 
     & img {
       width: 100%;
@@ -40,6 +43,14 @@
     font-size: 2.8rem;
     font-family: Montserrat, sans-serif;
     color: #515461;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  &__paragraph {
+    margin-top: 15px;
+    text-align: center;
+    height: 150px;
   }
 
   &__text {
@@ -53,7 +64,6 @@
       position: relative;
       margin: 0 auto;
       display: block;
-      width: 140px;
 
       & .counter {
         display: block;
@@ -80,7 +90,7 @@
       &__sp {
         position: absolute;
         top: 6px;
-        right: -8px;
+        right: 30px;
         font-size: 12px;
       }
     }
