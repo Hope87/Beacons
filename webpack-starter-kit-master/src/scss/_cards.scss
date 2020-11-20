@@ -3,7 +3,7 @@
     font-size: $title-size;
     font-weight: 700;
     color: $color-black;
-    margin: 30px 0;
+    margin: 75px 0;
     text-align: center;
   }
 
@@ -62,7 +62,7 @@
         height: 30px;
         opacity: 0.8;
         border: 1px solid #e6e6e6;
-        border-radius: 10px;
+        border-radius: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -110,5 +110,8 @@
   &__item:hover .cards__btn {
     background-color: $color-bg;
     color: $color-black;
+  }
+  &__item:hover h3 {
+    font-weight: 900;
   }
 }

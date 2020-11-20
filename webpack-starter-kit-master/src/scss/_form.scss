@@ -9,9 +9,8 @@
 
   &__img {
     position: absolute;
-    top: 0;
+    top: -23px;
     right: 0;
-    height: 100%;
 
     & img {
       object-fit: cover;
@@ -34,6 +33,7 @@
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
+    line-height: 50px;
   }
 
   &__text {
