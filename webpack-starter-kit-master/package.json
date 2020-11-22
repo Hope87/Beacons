@@ -14,7 +14,7 @@
     "url": "git+https://github.com/luxplanjay/webpack-starter-kit.git"
   },
   "keywords": [],
-  "author": "Vitaly Hope vitaliy0187@gmail.com",
+  "author": "Vitaly Hope",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
@@ -51,8 +51,6 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "core-js": "^3.7.0",
-    "handlebars": "^4.7.6",
-    "jquery": "^3.5.1",
-    "jquery-validation": "^1.19.2"
+    "handlebars": "^4.7.6"
   }
 }
