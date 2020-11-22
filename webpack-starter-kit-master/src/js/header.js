@@ -1,4 +1,4 @@
-export default function headerFunc (){
+function headerFunc (){
     const headerMenu = document.querySelector('.header__menu');
 
     const handlelClick = e => {
@@ -16,3 +16,22 @@ export default function headerFunc (){
     headerMenu.addEventListener('click', handlelClick);
 }
 
+function headerFuncCheck(){
+  const headerCheckbox = document.querySelector("#header__toogle")
+  const menu = document.querySelector(".header__menu")
+  
+  
+   const showMenu = (e) => {
+  
+    if(headerCheckbox.checked){
+      menu.classList.add("show")
+    }else{
+      menu.classList.remove("show")
+    }
+  }
+  
+  headerCheckbox.addEventListener("click", showMenu) 
+}
+
+
+export {headerFunc, headerFuncCheck}

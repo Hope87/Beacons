@@ -64,7 +64,7 @@
             <h2>Choose beacons and fill in the order form?</h2>
           </div>
 
-          <div class="col-md-4 col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <div class="cards__item">
               <h3>ASENSOR</h3>
               <div class="cards__img">
@@ -93,7 +93,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <div class="cards__item">
               <h3>ARM CORTEX - M0</h3>
               <div class="cards__img">
@@ -123,7 +123,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <div class="cards__item">
               <h3>ESTIMOTE PROXIMITY BEACONS</h3>
               <div class="cards__img">
@@ -153,7 +153,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <div class="cards__item">
               <h3>APRILBEACON 227L (150M RANGE)</h3>
               <div class="cards__img">
@@ -188,75 +188,74 @@
 
     <!-- SECTION FORM -->
 
-    <section class="form">
-      <div class="form__img">
+    <section class="form-section">
+      <div class="form-section__img">
         <img src="./images/beacons.png" alt="">
       </div>
 
       <div class="container">
         <div class="row">
           <div class="col-md-12 step-1">
-            <h2 class="form__title">A couple of steps to make your store popular</h2>
+            <h2 class="form-section__title">A couple of steps to make your store popular</h2>
           </div>
 
           <div class="col-md-3 hidden"></div>
           <div class="col-sm-4 col-md-2">
-            <p class="form__step active-step">STEP 1</p>
+            <p class="form-section__step active-step">STEP 1</p>
           </div>
           <div class="col-sm-4 col-md-2">
-            <p class="form__step">STEP 2</p>
+            <p class="form-section__step">STEP 2</p>
           </div>
           <div class="col-sm-4 col-md-2">
-            <p class="form__step">STEP 3</p>
+            <p class="form-section__step">STEP 3</p>
           </div>
           <div class="col-md-3"></div>
-           <div id="step-1" class="">
             <div class="col-md-12">
-              <p class="form__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+              <p class="form-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
             </div>
   
             <div class="col-md-12">
-              <form class="form__site" action="#" name="form-js">
-                <input type="text" name="First name" id="" placeholder="Enter First Name">
-                <input type="text" name="Last name" id="" placeholder="Enter Last Name">
-                <input type="email" name="Email" id="" placeholder="Enter Email">
-                <button>Next</button>
+              <form class="form" action="" name="form-js">
+                <div class="step-container">
+                  <div id="step-1" class="step step-visible">
+                    <div data-id="step-1" class="form__input-block">
+                      <input class="form__input" type="text" name="firstname" placeholder="Enter First Name">
+                      <div class="form__message"></div>
+                    </div>
+                    <div class="form__input-block" data-id="step-1">
+                      <input class="form__input" type="text" name="lastname" placeholder="Enter Last Name">
+                      <div class="form__message"></div>
+                    </div>
+                    <div class="form__input-block" data-id="step-1">
+                      <input class="form__input" type="email" name="email" placeholder="Enter Email">
+                    <div class="form__message"></div>
+                    </div>
+                    <button id="btn-next-1" class="form__next-btn" type="button">Next</button>
+                  </div>
+  
+                  <div id="step-2" class="step step-hidden">
+                    <div class="form__input-block" data-id="step-2">
+                      <input class="form__input" type="text" name="phone" placeholder="Enter your phone">
+                    <div class="form__message"></div>
+                    </div>
+                    <button id="btn-next-2" class="form__next-btn" type="button">Next</button>
+                  </div>
+  
+                  <div id="step-3" class="step step-hidden">
+                    <div class="form__input-block" data-id="step-3">
+                      <input class="form__input" type="text" name="purpose" placeholder="Purpose">
+                      <div class="form__message"></div>
+                    </div>
+                    <button id="btn-next-3" class="form__next-btn" type="button">Submit</button>
+                  </div>
+
+                </div>
               </form>
             </div>
            </div>
 
-           <div id="step-2" class="step-hidden">
-            <div class="col-md-12">
-              <p class="form__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit vel vitae in repudiandae est assumenda saepe itaque, delectus laborum veritatis, eum velit minus nobis natus quae quas nulla et.</p>
-            </div>
-  
-            <div class="col-md-12">
-              <form class="form__site" action="#" name="form-js">
-                <input type="text" name="Age" id="" placeholder="Enter Your age">
-                <input type="text" name="Weight" id="" placeholder="Enter Your weight">
-                <input type="email" name="Growth" id="" placeholder="Enter Your growth">
-                <button>Next</button>
-              </form>
-            </div>
-           </div>
-
-           <div id="step-3" class="step-hidden">
-            <div class="col-md-12">
-              <p class="form__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint deleniti, debitis voluptate possimus qui officia enim omnis culpa fugiat labore dolor, sed molestias sunt? Accusamus repudiandae itaque natus unde temporibus.
-              </p>
-            </div>
-  
-            <div class="col-md-12">
-              <form class="form__site" action="#" name="form-js">
-                <input type="text" name="First password" id="" placeholder="Enter First password">
-                <input type="text" name="Second password" id="" placeholder="Enter Second password">
-                <button>Next</button>
-              </form>
-            </div>
-           </div>
           
         </div>
-      </div>
     </section>
 
     <!-- SECTION FOOTER -->
@@ -296,13 +295,14 @@
             <span>© 2017 FDH CLOUD</span>
           </div>
 
-          <div class="footer__hand">
+          <div class="footer__img">
             <img src="./images/wave-vs-hand.png" alt="img">
           </div>
         </div>
       </div>
     </section>
-
-
+	<script>
+    
+  </script>
   </body>
 </html>

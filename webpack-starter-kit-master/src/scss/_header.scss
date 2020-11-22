@@ -54,11 +54,6 @@
       top: 0.6rem;
       border-radius: 75px;
     }
-
-    @media only screen and (max-width: 576px) {
-      margin-left: 1rem;
-      margin-top: 0.6rem;
-    }
   }
 
   &__menu {
@@ -67,13 +62,13 @@
     list-style: none;
     margin-top: 60px;
     position: relative;
+    transition-delay: 2s;
 
     @media only screen and (max-width: 768px) {
       position: relative;
       margin: 20px 0;
       padding: 0;
       width: 100%;
-      display: block;
       display: none;
     }
 
@@ -197,6 +192,6 @@
   }
 
   .show {
-    display: block !important ;
+    display: block;
   }
 }
