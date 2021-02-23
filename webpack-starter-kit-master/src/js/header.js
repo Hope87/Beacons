@@ -4,8 +4,10 @@ function headerFunc (){
     const handlelClick = e => {
       e.preventDefault();
       const currentLink = e.target;
+      console.log("currentLink", currentLink)
     
       const activeLink = e.currentTarget.querySelector('.active');
+      console.log(" activeLink", activeLink)
     
       if (activeLink) {
         activeLink.classList.remove('active');

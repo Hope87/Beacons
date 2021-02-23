@@ -133,6 +133,7 @@ const formFunc = () => {
     }
 
     const next = (btn) => {
+
         const btnId = getCurrentId(btn.id)
         const currentStepNode =  document.getElementById(`step-${btnId}`)
         const nextStepNode = document.getElementById(`step-${btnId + 1}`)

@@ -33,6 +33,7 @@ export default function cardsFunc(){
     
     cards.addEventListener('click', increment);
     cards.addEventListener('click', decrement);
+
 }
 
 
